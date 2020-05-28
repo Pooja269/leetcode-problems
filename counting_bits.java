@@ -40,4 +40,15 @@ class Solution {
         return count;
     }
 }
+
+-------***another O(n) solution***----
+class Solution {
+   public int[] countBits(int num) {
+        int[] result = new int[num + 1];
+        for(int i = 0; i <= num; i++) {
+            result[i] = i % 2 == 0 ? result[i / 2] : result[i / 2] + 1;
+        }
+        return result;
+    }
+}
 */
