@@ -22,6 +22,7 @@ Note:
 1 <= dislikes[i][j] <= N
 dislikes[i][0] < dislikes[i][1]
 There does not exist i != j for which dislikes[i] == dislikes[j]*/
+//----DFS to find bipartition of gragh(iterative)---
 class Solution {
     public boolean possibleBipartition(int N, int[][] dislikes) {
         List<List<Integer>> graph=new ArrayList<>(N+1);
